@@ -1,0 +1,68 @@
+ˆ15-07-09T18:07:14.949 | est worker | ClasspathStoryFinder | INFO   - Searching for stories called [berlin-clock.story] in [[C:\TTNetDev\berlin-clock\build\classes\test, C:\TTNetDev\berlin-clock\build\resources\test, C:\TTNetDev\berlin-clock\build\classes\main]] 
+Ð15-07-09T18:07:14.974 | est worker | aviouralTestEmbedder | INFO   - Running [BehaviouralTestEmbedder] with spring_stories [[file:/C:/TTNetDev/berlin-clock/build/resources/test/stories/berlin-clock.story]] 
+!Processing system properties {}
+ÜUsing controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,threads=1]
+^Running story file:/C:/TTNetDev/berlin-clock/build/resources/test/stories/berlin-clock.story
+×
+(BeforeStories)
+
+
+(AfterStories)
+
+Generating reports view to 'C:\TTNetDev\berlin-clock\build\classes\jbehave' using formats '[stats, html, console]' and view properties '{defaultFormats=stats, decorateNonHtml=true, viewDirectory=view, decorated=ftl/jbehave-report-decorated.ftl, reports=ftl/jbehave-reports-with-totals.ftl, maps=ftl/jbehave-maps.ftl, navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl}'
+hReports view generated with 0 stories (of which 0 pending) containing 0 scenarios (of which 0 pending)
+
+e15-07-09T18:07:15.607 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is : null 
+a15-07-09T18:07:15.607 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is :  
+i15-07-09T18:07:15.613 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is : 00:00:00 
+g15-07-09T18:07:15.613 | est worker | BerlinClockTimeUtils | DEBUG  - hour : 0| minute: 0 | second: 0 
+P15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+ 
+P15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+OOOO
+OOOO
+ 
+P15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+OOOO
+OOOO
+OOOOOOOOOOO
+OOOO 
+i15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is : 13:17:01 
+i15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - hour : 13| minute: 17 | second: 1 
+P15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+ 
+P15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+RROO
+RRRO
+ 
+P15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+RROO
+RRRO
+YYROOOOOOOO
+YYOO 
+i15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is : 23:59:59 
+j15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - hour : 23| minute: 59 | second: 59 
+P15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+ 
+P15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+RRRR
+RRRO
+ 
+P15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+RRRR
+RRRO
+YYRYYRYYRYY
+YYYY 
+i15-07-09T18:07:15.616 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is : 24:00:00 
+h15-07-09T18:07:15.616 | est worker | BerlinClockTimeUtils | DEBUG  - hour : 24| minute: 0 | second: 0 
+P15-07-09T18:07:15.616 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+ 
+P15-07-09T18:07:15.616 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+RRRR
+RRRR
+ 
+P15-07-09T18:07:15.616 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+RRRR
+RRRR
+OOOOOOOOOOO
+OOOO 

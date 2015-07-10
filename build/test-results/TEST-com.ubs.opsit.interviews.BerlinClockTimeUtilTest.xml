@@ -1,0 +1,84 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" tests="24" failures="0" errors="0" timestamp="2015-07-09T15:07:15" hostname="7167-PC" time="0.016">
+  <properties/>
+  <testcase name="shouldReturnCorrectIntArrayWhenCorrectTime" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0010"/>
+  <testcase name="throwExceptionWhenMinuteIsGreaterThan59" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeTurnedOnFirstMinuteRowWhenMinuteIsThreeFold" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeTwoRedOnSecondHourRowWhenRemainingHourIsTwo" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="throwExceptionWhenHourIsGreaterThan24" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeTurnedOnFirstMinuteRowWhenMinuteIsFiveFold" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="throwExceptionWhenTimeIsNull" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0010"/>
+  <testcase name="throwExceptionWhenTimeIsEmpty" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeTurnedOnYellowLampOnTopWhenSecondIsEven" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldThrowExceptionWhenTimeIsNotInNumberFormat" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeThreeYellowOnSecondMinuteRowWhenRemainingMinuteIsThree" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeFourRedOnSecondHourRowWhenRemainingHourIsOne" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeTurnedOffYellowLampOnTopWhenSecondIsOdd" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeTwoYellowOnSecondMinuteRowWhenRemainingMinuteIsTwo" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeOneYellowOnSecondMinuteRowWhenRemainingMinuteIsOne" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0010"/>
+  <testcase name="shouldBeTurnedOnYellowLampOnTopWhenSecondsIsZero" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="throwExceptionWhenSecondIsGreaterThan59" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldPassFromAcceptanceTest" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0030"/>
+  <testcase name="shouldBeFourTurnOffFirstMinuteRowWhenMinuteIsLessThanFive" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeFourTurnOffFirstHourRowWhenHourIsLessThanFive" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeRedFirstHourRowWhenHourIsFivefold" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="throwExceptionWhenFormatIsInvalid" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeFourYellowOnSecondMinuteRowWhenRemainingMinuteIsFour" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <testcase name="shouldBeThreeRedOnSecondHourRowWhenRemainingHourIsThree" classname="com.ubs.opsit.interviews.BerlinClockTimeUtilTest" time="0.0"/>
+  <system-out><![CDATA[15-07-09T18:07:15.607 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is : null 
+15-07-09T18:07:15.607 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is :  
+15-07-09T18:07:15.613 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is : 00:00:00 
+15-07-09T18:07:15.613 | est worker | BerlinClockTimeUtils | DEBUG  - hour : 0| minute: 0 | second: 0 
+15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+ 
+15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+OOOO
+OOOO
+ 
+15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+OOOO
+OOOO
+OOOOOOOOOOO
+OOOO 
+15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is : 13:17:01 
+15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - hour : 13| minute: 17 | second: 1 
+15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+ 
+15-07-09T18:07:15.614 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+RROO
+RRRO
+ 
+15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+RROO
+RRRO
+YYROOOOOOOO
+YYOO 
+15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is : 23:59:59 
+15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - hour : 23| minute: 59 | second: 59 
+15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+ 
+15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+RRRR
+RRRO
+ 
+15-07-09T18:07:15.615 | est worker | BerlinClockTimeUtils | DEBUG  - result: O
+RRRR
+RRRO
+YYRYYRYYRYY
+YYYY 
+15-07-09T18:07:15.616 | est worker | BerlinClockTimeUtils | DEBUG  - Input standard time is : 24:00:00 
+15-07-09T18:07:15.616 | est worker | BerlinClockTimeUtils | DEBUG  - hour : 24| minute: 0 | second: 0 
+15-07-09T18:07:15.616 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+ 
+15-07-09T18:07:15.616 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+RRRR
+RRRR
+ 
+15-07-09T18:07:15.616 | est worker | BerlinClockTimeUtils | DEBUG  - result: Y
+RRRR
+RRRR
+OOOOOOOOOOO
+OOOO 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
