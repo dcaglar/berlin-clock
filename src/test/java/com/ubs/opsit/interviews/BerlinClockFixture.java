@@ -9,10 +9,7 @@ import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.junit.Test;
 
-/**
- * Acceptance test class that uses the JBehave (Gerkin) syntax for writing stories.  You should not need to
- * edit this class to complete the exercise, this is your definition of done.
- */
+
 public class BerlinClockFixture {
 
     private TimeConverter berlinClock = new BerlinClockTimeUtils();

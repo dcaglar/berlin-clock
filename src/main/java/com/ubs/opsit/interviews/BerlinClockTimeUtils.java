@@ -17,20 +17,20 @@ public class BerlinClockTimeUtils implements TimeConverter {
 	private static final int SECONDS_ARRAY_INDEX = 2;
 
 
-	public static final int FIRST_HOURS_ROW_TIME_UNIT = 5; //Every lamp represents 5 hours in first hours row
-	public static final int FIRST_HOURS_ROW_LENGTH = 4;     //There are 4 lamps in first hours row
+	public static final int FIRST_HOURS_ROW_TIME_UNIT = 5; //Every lamp represents 5 hours in first row of hour
+	public static final int FIRST_HOURS_ROW_LENGTH = 4;     //There are 4 lamps in first hour or row
 	
-	public static final int SECOND_HOURS_ROW_TIME_UNIT = 1;     //Every lamp represents 1 hour in second hours row
-	public static final int SECOND_HOURS_ROW_LENGTH = 4;   //There are 4 lamps in second hours row
+	public static final int SECOND_HOURS_ROW_TIME_UNIT = 1;     //Every lamp represents 1 hour in 2nd hour of row
+	public static final int SECOND_HOURS_ROW_LENGTH = 4;   //There are 4 lamps in 2nd hours of row
 
-	public static final int FIRST_MINUTES_ROW_TIME_UNIT = 5;  //Every lamp represents 5 minutes in first minutes row
-	public static final int FIRST_MINUTES_ROW_LENGTH = 11;     //There are 11 lamps in first minutes row
-	public static final int FIRST_MINUTES_ROW_RED_LAMP_MODE = 3;   //3rd 6th and 9th lamps are red in first second minutes row
+	public static final int FIRST_MINUTES_ROW_TIME_UNIT = 5;  //Every lamp represents 5 minutes in first  row of minute
+	public static final int FIRST_MINUTES_ROW_LENGTH = 11;     //There are 11 lamps in first row of minute
+	public static final int FIRST_MINUTES_ROW_RED_LAMP_MODE = 3;   //3rd 6th and 9th lamps are red in first row of minutes
 	
 	
 	
-	public static final int SECOND_MINUTES_ROW_TIME_UNIT = 1;    //Every lamp represents 1 minute in second minutes row
-	public static final int SECOND_MINUTES_ROW_LENGTH = 4;   //There are 4 lamps in second minutes row
+	public static final int SECOND_MINUTES_ROW_TIME_UNIT = 1;    //Every lamp represents 1 minute in 2n row of minute
+	public static final int SECOND_MINUTES_ROW_LENGTH = 4;   //There are 4 lamps in second row of minute
 	
 	public static final String CLOSED_LAMP_SYMBOL = "O";   //This indicates that lamp is closed
 	public static final String RED_LAMP_SYMBOL = "R";      //this indicates that lamp is open and red
@@ -48,13 +48,13 @@ public class BerlinClockTimeUtils implements TimeConverter {
 		int[] timeArray = fetchArrayFromStandardTime(standardTime);   //we divide standard time into 3 parts(hour,minute,second)  
 		BerlinLogger.debug("hour : " + timeArray[0] + "| minute: " + timeArray[1] + " | second: " + timeArray[2]);
 		
-		result.append(generateSecondPart(timeArray[SECONDS_ARRAY_INDEX]) + NEW_LINE);  //this method prints the top of the clock which is second part
+		result.append(generateSecondPart(timeArray[SECONDS_ARRAY_INDEX]) + NEW_LINE);  //this method prints second(sec) part of clock
 		BerlinLogger.debug("result: " + result.toString());
 		
-		result.append(generateHourPart(timeArray[HOURS_ARRAY_INDEX]) + NEW_LINE); //this method prints the second hour row part(top)
+		result.append(generateHourPart(timeArray[HOURS_ARRAY_INDEX]) + NEW_LINE); //this method prints the  hour  part of clock
 		BerlinLogger.debug("result: " + result.toString());
 		
-		result.append(generateMinutePart(timeArray[MINUTES_ARRAY_INDEX]));  //this method prints the second minute row part(bottom)
+		result.append(generateMinutePart(timeArray[MINUTES_ARRAY_INDEX]));  //this method prints the minute part of clock
 		BerlinLogger.debug("result: " + result.toString());
 		
 		return result.toString();
@@ -83,7 +83,7 @@ public class BerlinClockTimeUtils implements TimeConverter {
 	}
 
 	
-	protected String generateHourPart(int hours) {  //this method returns 2 hours row in Berlin Clock Format
+	protected String generateHourPart(int hours) {  //this method returns 2 rows of hour in Berlin Clock Format
 		assert(hours <= 24) : "Hour should be less than or equal to 24";
 		
 		StringBuilder result = new StringBuilder();
@@ -92,7 +92,7 @@ public class BerlinClockTimeUtils implements TimeConverter {
 		return result.toString();
 	}
 
-	protected String generateFirstHourPart(int hours) {
+	protected String generateFirstHourPart(int hours) {   
 		assert(hours <= 24) : "Hour should be less than or equal to 24";
 		
 		return generateRow(hours, FIRST_HOURS_ROW_TIME_UNIT, FIRST_HOURS_ROW_LENGTH, RED_LAMP_SYMBOL);
@@ -139,7 +139,7 @@ public class BerlinClockTimeUtils implements TimeConverter {
 
 
 
-	private String generateRow(int number, int timeUnit, int rowLength, String turnOnSymbol) {
+	private String generateRow(int number, int timeUnit, int rowLength, String turnOnSymbol) { // generic method to display related part of clock
 		StringBuilder result = new StringBuilder();
 		
 		int counter = 0;
