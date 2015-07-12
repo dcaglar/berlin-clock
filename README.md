@@ -1,3 +1,5 @@
+# The Berlin Clock
+
 The Berlin Uhr (Clock) is a rather strange way to show the time. On the top of the clock there is a yellow lamp that
 blinks on/off every two seconds. The time is calculated by adding rectangular lamps.
  
@@ -11,3 +13,7 @@ quarter, half and last quarter of an hour. The other lamps are yellow. In the la
 represents 1 minute.
 
 One can be seen [here](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_r9OwZ-9cifRgpCeiYS0sM5CCpgHlrP-sm1YEaWCaCTnLpaqZ)
+
+## Some hints
+If you are new to Gradle, it may be worth spending 10 minutes reading a high level summary. 
+
