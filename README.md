@@ -10,4 +10,4 @@ first row every lamp represents 5 minutes. In this first row the 3rd, 6th and 9t
 quarter, half and last quarter of an hour. The other lamps are yellow. In the last row with 4 lamps every lamp
 represents 1 minute.
 
-One can be seen [here](http://uniqueclocks.co.uk/media/berlin~clock.jpg~1.gif)
+One can be seen [here](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_r9OwZ-9cifRgpCeiYS0sM5CCpgHlrP-sm1YEaWCaCTnLpaqZ)
